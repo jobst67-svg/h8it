@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050505;color:#dedbd5;font-family:'IBM Plex Mono',monospace;overflow-x:hidden}.noise{position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}.boot{position:fixed;inset:0;background:#050505;z-index:100;display:flex;align-items:center;justify-content:center;color:#ff4b20;transition:opacity .45s}.boot.done{opacity:0;pointer-events:none}.boot pre{font:500 13px/1.8 'IBM Plex Mono';width:min(560px,85vw)}header{height:74px;border-bottom:1px solid #25211e;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,76px);position:absolute;top:0;width:100%;z-index:10}.logo{color:#f0ece6;text-decoration:none;font-weight:700;font-size:20px;letter-spacing:-1px}.logo span,.accent,.prompt{color:#ff4b20}nav{display:flex;gap:30px}nav a,footer a{color:#77716c;text-decoration:none;font-size:11px;letter-spacing:1px}nav a:hover,footer a:hover{color:#ff4b20}.hero{min-height:100vh;padding:170px clamp(22px,9vw,140px) 90px;display:flex;flex-direction:column;justify-content:center;position:relative;background:radial-gradient(circle at 70% 40%,rgba(255,61,15,.07),transparent 30%)}.eyebrow{font-size:10px;letter-spacing:2px;color:#716b66}.dot{display:inline-block;width:6px;height:6px;background:#ff4b20;border-radius:50%;box-shadow:0 0 12px #ff4b20;margin-right:8px}.hero h1{font-size:clamp(68px,13vw,190px);line-height:.8;letter-spacing:-.09em;margin:36px 0 50px;color:#eeeae4;text-transform:lowercase}.prompt{font-size:.36em;vertical-align:middle;margin-right:.1em}.tag{font-size:clamp(18px,2vw,29px);line-height:1.55;letter-spacing:.05em;margin:0 0 42px;color:#8c8580}.tag b{color:#eeeae4}.enter{border:1px solid #ff4b20;color:#ff5a2d;text-decoration:none;padding:16px 18px;width:230px;font-size:11px;letter-spacing:1.5px;display:flex;justify-content:space-between;transition:.2s}.enter:hover{background:#ff4b20;color:#050505;box-shadow:0 0 35px rgba(255,75,32,.2)}.sys{position:absolute;bottom:28px;font-size:8px;letter-spacing:1px;color:#3e3a37}.projects,.about{padding:110px clamp(22px,7vw,110px);border-top:1px solid #201e1c}.section-title{display:flex;align-items:center;gap:18px;margin-bottom:55px}.section-title span{font-size:9px;color:#ff4b20}.section-title h2{font-size:15px;letter-spacing:2px;margin:0}.section-title i{height:1px;background:#2c2926;flex:1}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{min-height:390px;border:1px solid #282522;padding:24px;color:#e6e1db;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:.25s;background:#080808}.card:before{content:"";position:absolute;left:0;top:0;width:2px;height:0;background:#ff4b20;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#5d2d20;background:#0b0908}.card:hover:before{height:100%}.status{align-self:flex-end;color:#ff4b20;font-size:8px;border:1px solid #4c251b;padding:5px 7px}.status.live{color:#ff7048}.status.exp{color:#a64a31}.card small{font-size:8px;color:#55504c}.card h3{font-size:clamp(28px,3vw,48px);margin:12px 0;letter-spacing:-2px}.card p{color:#746e69;font-size:10px;letter-spacing:1px}.card strong{font-size:9px;color:#ff4b20;letter-spacing:1px}.about{min-height:65vh}.about>p{font-size:clamp(17px,2.1vw,30px);line-height:1.5;letter-spacing:-.8px;max-width:900px;color:#aaa39d;min-height:3em}.accent-type{color:#ff4b20}.manifest-cursor{display:inline-block;color:#ff4b20;margin-left:2px;animation:blink .75s steps(1,end) infinite}.terminal{margin-top:80px;border-top:1px solid #282522;border-bottom:1px solid #282522;padding:24px 0;font-size:12px;color:#716b66}.terminal span{color:#ff4b20}.terminal b{color:#d5d0ca;font-weight:400}.terminal i{display:inline-block;width:7px;height:14px;background:#ff4b20;vertical-align:middle;animation:blink .8s infinite}@keyframes blink{50%{opacity:0}}footer{border-top:1px solid #25211e;padding:28px clamp(22px,5vw,76px);display:grid;grid-template-columns:1fr 1fr 1fr;font-size:9px;color:#4f4a46;letter-spacing:1px}footer>div:nth-child(2){display:flex;justify-content:center;gap:20px}.footer-status{text-align:right;color:#75311f}@media(max-width:760px){header{height:62px}nav{gap:15px}nav a{font-size:9px}.hero{padding-top:130px;min-height:94vh}.hero h1{margin:32px 0 40px}.sys{font-size:6px;max-width:85%;line-height:1.7}.projects,.about{padding-top:75px;padding-bottom:75px}.grid{grid-template-columns:1fr}.card{min-height:260px}.about>p{letter-spacing:-1px}.terminal{font-size:9px;overflow:hidden;white-space:nowrap}footer{grid-template-columns:1fr;gap:18px;text-align:center}footer>div:nth-child(2){order:-1}.footer-status{text-align:center}}
+
+.gate{width:min(680px,88vw);font-size:clamp(14px,2vw,20px);line-height:1.8}.gate #gatePrompt{color:#dedbd5;letter-spacing:.04em}.gate .answer{color:#ff4b20}.gate-cursor{color:#ff4b20;animation:blink .75s steps(1,end) infinite}.gate #bootText{margin-top:24px;width:100%;color:#ff4b20;white-space:pre-wrap}.boot.done{visibility:hidden}
+/* v0.0.3 keyboard-only centered entry */
+.gate{width:min(680px,88vw);text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gate #gatePrompt{text-align:center;width:100%}
+.gate #bootText{text-align:center;width:100%}
+.boot{user-select:none}
+/* v0.0.4 — stripped home / horizontal collapsing projects */
+.hero,.projects{display:none!important}
+.console-home{min-height:100vh;padding:150px clamp(22px,6vw,90px) 70px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 50% 45%,rgba(255,75,32,.035),transparent 42%)}
+.online{font-size:12px;letter-spacing:2.4px;color:#d7d2cc;margin-bottom:34px;display:flex;align-items:center;gap:11px}
+.online-dot{width:8px;height:8px;border-radius:50%;background:#43ff73;box-shadow:0 0 8px #43ff73,0 0 18px rgba(67,255,115,.55);animation:onlinePulse 1.05s steps(2,end) infinite}
+@keyframes onlinePulse{50%{opacity:.2;box-shadow:0 0 2px #43ff73}}
+.project-strip{width:100%;height:420px;display:flex;border:1px solid #282522;overflow:hidden;background:#070707}
+.project{position:relative;flex:1;min-width:0;border-right:1px solid #282522;color:#e8e3dc;text-decoration:none;padding:28px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:flex .42s cubic-bezier(.2,.8,.2,1),background .25s}
+.project:last-child{border-right:0}.project:hover{flex:2.15;background:#0c0908}.project:before{content:"";position:absolute;inset:0 auto 0 0;width:2px;background:#ff4b20;transform:scaleY(0);transform-origin:bottom;transition:transform .3s}.project:hover:before{transform:scaleY(1)}
+.project-name small{font-size:8px;color:#57514c;letter-spacing:1.4px}.project-name h2{font-size:clamp(25px,3vw,48px);letter-spacing:-2px;margin:12px 0;white-space:nowrap}.project-detail{opacity:0;transform:translateY(18px);transition:opacity .2s,transform .3s;pointer-events:none;white-space:nowrap}.project:hover .project-detail{opacity:1;transform:none}.project-detail span{display:inline-block;font-size:8px;color:#ff4b20;border:1px solid #4c251b;padding:5px 7px;margin-bottom:18px}.project-detail p{font-size:11px;color:#817a74;letter-spacing:1px;margin:0 0 24px}.project-detail strong{font-size:10px;color:#ff4b20;letter-spacing:1.4px}.project:hover .project-detail{pointer-events:auto}
+@media(max-width:760px){.console-home{padding:110px 18px 50px;justify-content:flex-start}.online{margin-top:55px}.project-strip{height:auto;flex-direction:column}.project{min-height:92px;border-right:0;border-bottom:1px solid #282522;transition:min-height .35s,background .25s}.project:last-child{border-bottom:0}.project:hover,.project:focus{flex:1;min-height:230px}.project-detail{white-space:normal}.project:hover .project-detail,.project:focus .project-detail{opacity:1;transform:none}.project-name h2{font-size:28px}}
+/* v0.0.9 — fake animated local drive scan */
+.disk-check{min-height:82vh;padding:90px clamp(22px,7vw,110px);border-top:1px solid #201e1c;display:flex;flex-direction:column;justify-content:center}
+.checking{display:flex;align-items:center;gap:12px;margin-bottom:22px;font-size:clamp(13px,1.4vw,18px);letter-spacing:1.5px;color:#d8d3cd}
+.checking i{width:8px;height:15px;background:#ff4b20;display:inline-block;animation:blink .72s steps(1,end) infinite}
+.drive-window{position:relative;overflow:hidden;border:1px solid #282522;background:#070707;min-height:360px;padding:20px 22px;box-shadow:inset 0 0 45px rgba(0,0,0,.55)}
+.drive-head{display:flex;justify-content:space-between;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #24211f;font-size:10px;letter-spacing:1.2px;color:#6f6964}.drive-head span{color:#ff4b20}.drive-head b{font-weight:400;color:#43ff73}
+#driveOutput{margin:0;color:#aaa49e;font:500 11px/1.7 'IBM Plex Mono',monospace;white-space:pre-wrap;word-break:break-word;max-height:300px;overflow:hidden}#driveOutput .hot{color:#ff4b20}.scan-line{position:absolute;left:0;right:0;height:1px;top:0;background:rgba(67,255,115,.35);box-shadow:0 0 10px rgba(67,255,115,.25);opacity:0}.disk-check.scanning .scan-line{opacity:1;animation:scanDown 2.2s linear infinite}@keyframes scanDown{from{transform:translateY(0)}to{transform:translateY(355px)}}
+@media(max-width:760px){.disk-check{min-height:72vh;padding:70px 18px}.drive-window{min-height:320px;padding:16px}.checking{font-size:12px}#driveOutput{font-size:8px;line-height:1.75;max-height:270px}}
+/* v0.0.10 — irreversible per-tile fake scan on hover */
+.project-strip{height:500px}
+.project.engaged{flex:2.35;background:#0c0908}
+.project.engaged:before{transform:scaleY(1)}
+.project.engaged .project-detail{opacity:1;transform:none;pointer-events:auto}
+.tile-scan{margin:18px 0 16px;border-top:1px solid #26211e;border-bottom:1px solid #26211e;padding:12px 0;min-height:176px;opacity:.25;transition:opacity .2s}
+.project.engaged .tile-scan{opacity:1}
+.tile-check{font-size:9px;letter-spacing:1px;color:#d8d3cd;display:flex;align-items:center;gap:7px;margin-bottom:8px}
+.tile-check i{display:inline-block;width:6px;height:11px;background:#ff4b20;animation:blink .7s steps(1,end) infinite}
+.tile-output{margin:0;height:98px;overflow:hidden;white-space:pre-wrap;color:#77716c;font:500 8px/1.55 'IBM Plex Mono',monospace}
+.tile-output .found{color:#43ff73}.tile-output .hot{color:#ff4b20}
+.tile-prompt{min-height:34px;color:#e0dbd5;font-size:9px;line-height:1.55;letter-spacing:.3px}
+.tile-prompt .exe{color:#ff4b20}.tile-prompt .cursor{color:#ff4b20;animation:blink .72s steps(1,end) infinite}
+.tile-prompt .ok{color:#43ff73}.tile-prompt .no{color:#77716c}
+.project.executed strong{color:#43ff73}.project.executed{border-color:#24452d}
+@media(max-width:760px){.project-strip{height:auto}.project.engaged{min-height:390px}.tile-output{height:88px}.tile-scan{min-height:165px}}
+/* v0.0.11 — one active show at a time, larger stage */
+.project-strip{height:590px}
+.project-strip.locked .project:not(.engaged){flex:.72;background:#070707}
+.project-strip.locked .project:not(.engaged):hover{flex:.72;background:#070707}
+.project-strip.locked .project:not(.engaged):hover:before{transform:scaleY(0)}
+.project-strip.locked .project:not(.engaged):hover .project-detail{opacity:0;transform:translateY(18px);pointer-events:none}
+.project.engaged{flex:4.4;background:#0c0908;z-index:2}
+.project.engaged .project-name h2{font-size:clamp(34px,4.2vw,68px)}
+.project.engaged .project-detail p{font-size:13px}
+.project.engaged .tile-scan{min-height:255px;padding:18px 0;margin:22px 0 18px}
+.project.engaged .tile-check{font-size:12px;margin-bottom:12px}
+.project.engaged .tile-output{height:145px;font-size:10px;line-height:1.65}
+.project.engaged .tile-prompt{min-height:44px;font-size:12px;line-height:1.65}
+.project.finished:not(:hover){flex:1;background:#070707;z-index:auto}
+.project.finished:not(:hover):before{transform:scaleY(0)}
+.project.finished:not(:hover) .project-detail{opacity:0;transform:translateY(18px);pointer-events:none}
+@media(max-width:760px){.project-strip{height:auto}.project-strip.locked .project:not(.engaged){min-height:92px}.project.engaged{min-height:500px}.project.engaged .tile-output{height:130px;font-size:9px}.project.engaged .tile-prompt{font-size:10px}}
+
+/* v0.0.12 — normal tile size, larger fake-readout typography */
+.project-strip{height:500px}
+.project.engaged{flex:2.35}
+.project.engaged .project-name h2{font-size:clamp(25px,3vw,48px)}
+.project.engaged .project-detail p{font-size:11px}
+.project.engaged .tile-scan{min-height:275px;padding:18px 0;margin:20px 0 16px}
+.project.engaged .tile-check{font-size:clamp(14px,1.35vw,18px);margin-bottom:13px}
+.project.engaged .tile-check i{width:8px;height:16px}
+.project.engaged .tile-output{height:150px;font-size:clamp(12px,1.05vw,15px);line-height:1.55}
+.project.engaged .tile-prompt{min-height:70px;font-size:clamp(13px,1.15vw,16px);line-height:1.55}
+.project.formatting{animation:dangerPulse .38s steps(2,end) infinite}
+@keyframes dangerPulse{50%{box-shadow:inset 0 0 45px rgba(255,75,32,.12)}}
+.project .countdown{display:inline-block;color:#ff4b20;font-size:1.35em;font-weight:700;margin-top:4px}
+@media(max-width:760px){.project-strip{height:auto}.project.engaged{min-height:500px}.project.engaged .tile-output{height:145px;font-size:11px}.project.engaged .tile-prompt{font-size:12px}}
+
+
+/* v0.0.15 — einmaliger DOS-Blackscreen nach der ersten Schreck-Show */
+.h8-blackout{position:fixed;inset:0;z-index:99999;background:#000;display:flex;align-items:center;justify-content:center;color:#d8d3cd;font-family:'IBM Plex Mono',monospace}
+.h8-dos{font-size:clamp(22px,3vw,38px);letter-spacing:.04em}
+.h8-dos span{display:inline-block;color:#d8d3cd;animation:blink .7s steps(1,end) infinite}
+
+
+/* v0.0.17 — CMD-artiger Blackout + Sensitive-Material-Gag */
+.h8-blackout{display:block;padding:18px 20px}
+.h8-dos{font-size:17px;letter-spacing:0;line-height:1.35}
+.tile-output.sensitive-hit{color:#ff4b20;animation:sensitiveBlink .42s steps(1,end) infinite}
+@keyframes sensitiveBlink{50%{opacity:.38}}
+@media(max-width:760px){.h8-blackout{padding:12px 14px}.h8-dos{font-size:15px}}
+
+/* v0.0.18 — aufgeräumtes Terminal: vollständig sichtbar, nur Warnung blinkt */
+.project.engaged .tile-scan{min-height:360px;padding:16px 0 14px;margin:16px 0 12px}
+.project.engaged .tile-check{font-size:clamp(13px,1.15vw,16px);margin-bottom:10px}
+.project.engaged .tile-output{height:238px;overflow:hidden;font-size:clamp(11px,.95vw,14px);line-height:1.42;color:#aaa39d}
+.project.engaged .tile-prompt{min-height:48px;margin-top:8px;font-size:clamp(12px,1.05vw,15px);line-height:1.5}
+.tile-sensitive{display:none;margin:7px 0 8px;color:#ff3b30;font:600 clamp(11px,.95vw,14px)/1.45 'IBM Plex Mono',monospace;white-space:pre-wrap}
+.tile-sensitive.show{display:block}
+.tile-sensitive.blink{animation:sensitiveTextBlink .58s steps(1,end) infinite}
+@keyframes sensitiveTextBlink{50%{opacity:.32}}
+.tile-output.sensitive-hit{color:#aaa39d;animation:none}
+@media(max-width:760px){.project.engaged .tile-scan{min-height:350px}.project.engaged .tile-output{height:225px;font-size:10px}.tile-sensitive{font-size:10px}}
+
+/* v0.0.19 — Terminal läuft in der Kachel mit eigener Scrollleiste */
+.project.engaged .tile-scan{
+  height:300px;
+  min-height:300px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+  scrollbar-color:#5b2a1d #0a0807;
+  padding:0 12px 12px 0;
+  margin:16px 0 12px;
+}
+.project.engaged .tile-scan::-webkit-scrollbar{width:7px}
+.project.engaged .tile-scan::-webkit-scrollbar-track{background:#0a0807;border-left:1px solid #211d1a}
+.project.engaged .tile-scan::-webkit-scrollbar-thumb{background:#5b2a1d;border-radius:0}
+.project.engaged .tile-scan::-webkit-scrollbar-thumb:hover{background:#ff4b20}
+.project.engaged .tile-check{
+  position:sticky;top:0;z-index:2;
+  padding:12px 0 10px;
+  margin:0 0 8px;
+  background:linear-gradient(#0c0908 78%,rgba(12,9,8,.88));
+}
+.project.engaged .tile-output{
+  height:auto;min-height:0;overflow:visible;
+  margin:0;padding:0;
+  font-size:clamp(11px,.95vw,14px);line-height:1.42;
+}
+.project.engaged .tile-sensitive{margin:8px 0 9px}
+.project.engaged .tile-prompt{min-height:0;margin:10px 0 4px;padding-bottom:4px}
+@media(max-width:760px){
+  .project.engaged .tile-scan{height:285px;min-height:285px;padding-right:9px}
+  .project.engaged .tile-output{height:auto;font-size:10px}
+}
+
+/* v0.0.21: Punkte sind reiner Text – keinerlei Cursor/Block-Styling */
+.tile-check .running-dots{display:inline; width:auto; overflow:visible; background:none!important; color:inherit!important; animation:none!important; margin-left:0}
