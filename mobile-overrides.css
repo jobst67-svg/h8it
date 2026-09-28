@@ -1,0 +1,21 @@
+@media (max-width:760px),(pointer:coarse){
+  .mobile-keys.show.inline-mobile-keys{
+    position:static!important;
+    left:auto!important;
+    bottom:auto!important;
+    transform:none!important;
+    z-index:auto!important;
+    display:flex!important;
+    justify-content:flex-start;
+    gap:8px;
+    margin:5px 0 8px;
+  }
+  .gate .mobile-keys.show.inline-mobile-keys{justify-content:center;margin:10px 0 4px}
+  .mobile-keys button{
+    width:42px!important;
+    height:32px!important;
+    font-size:13px!important;
+    box-shadow:none!important;
+  }
+  .project-detail>strong{display:none!important}
+}
