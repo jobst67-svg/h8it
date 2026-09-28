@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>h8it.de — v0.0.22</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="boot" class="boot-screen" aria-live="polite">
+  <div class="boot-box">
+    <div class="boot-title">ENTER THE VOID <span class="dim">[J/N]</span> <span id="bootCursor" class="cursor">█</span></div>
+    <div id="bootMsg" class="boot-msg"></div>
+  </div>
+</div>
+
+<div id="site" class="site hidden">
+<header id="top" class="topbar">
+  <a class="brand" href="#top">h8it</a>
+  <nav>
+    <a href="#projects">PROJEKTE</a>
+    <a href="#about">WARUM?</a>
+  </nav>
+  <div class="system"><span class="dot"></span><span>SYSTEM ONLINE</span></div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Intro">
+    <div class="hero-center">
+      <div class="system big"><span class="dot"></span><span>SYSTEM ONLINE</span></div>
+      <div class="hint">↓ RUNTERSCROLLEN</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="section-head reveal-text" data-reveal="PROJEKTE_">PROJEKTE_</div>
+    <div class="tile-row">
+      <article class="tile" tabindex="0" data-app="NAGGIT.EXE" data-url="naggit.html">
+        <div class="tile-top"><span class="code">PROJEKT_000</span><span class="tag">UNNÖTIG</span></div>
+        <h2>NAGGIT</h2><p class="sub">DAS INTERNET HAT DARAUF GEWARTET. NICHT.</p>
+        <div class="tile-terminal"><div class="tile-check">Checking your Computer</div><div class="terminal-scroll"><div class="tile-output"></div><div class="tile-warning">SENSITIVES MATERIAL GEFUNDEN.<br><span>WENN DAS DEINE FRAU WÜSSTE...</span></div><div class="tile-prompt"></div></div></div>
+      </article>
+      <article class="tile" tabindex="0" data-app="UNBEQUEM.EXE" data-url="unbequem.html">
+        <div class="tile-top"><span class="code">PROJEKT_002</span><span class="tag">NÜTZLICH?</span></div>
+        <h2>UNBEQUEM</h2><p class="sub">MELDEN. SENDEN. WEITERLEBEN.</p>
+        <div class="tile-terminal"><div class="tile-check">Checking your Computer</div><div class="terminal-scroll"><div class="tile-output"></div><div class="tile-warning">SENSITIVES MATERIAL GEFUNDEN.<br><span>WENN DAS DEINE FRAU WÜSSTE...</span></div><div class="tile-prompt"></div></div></div>
+      </article>
+      <article class="tile" tabindex="0" data-app="THE_RAT.EXE" data-url="the-rat.html">
+        <div class="tile-top"><span class="code">PROJEKT_001</span><span class="tag">GEHEIM</span></div>
+        <h2>THE RAT</h2><p class="sub">WERDE TEIL DES RAT PACKS.</p>
+        <div class="tile-terminal"><div class="tile-check">Checking your Computer</div><div class="terminal-scroll"><div class="tile-output"></div><div class="tile-warning">SENSITIVES MATERIAL GEFUNDEN.<br><span>WENN DAS DEINE FRAU WÜSSTE...</span></div><div class="tile-prompt"></div></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about"><div class="about-copy reveal-text" data-reveal="Nützlich. Unnötig. Ein bisschen daneben.\nKleine digitale Dinge. Gebaut, weil warum zur Hölle nicht?">Nützlich. Unnötig. Ein bisschen daneben.<br>Kleine digitale Dinge. Gebaut, weil <em>warum zur Hölle nicht?</em></div></section>
+</main>
+</div>
+<div id="fakeFormat" class="fake-format hidden"><div class="format-box"><div class="format-line">GRATULIERE, DEINE FESTPLATTE WIRD FORMATIERT.</div><div id="formatCount" class="format-count">3</div><div class="format-bar"><span id="formatFill"></span></div><div id="formatPct" class="format-pct">0%</div></div></div>
+<div id="blackScreen" class="black-screen hidden"><div class="psline">C:\&gt;<span class="pscursor">_</span></div></div>
+<script src="script.js"></script>
+</body>
+</html>
